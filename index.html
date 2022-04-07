@@ -1,0 +1,37 @@
+<!-- ******************************************
+*  Author : Excel   
+*  Created On : Thu Apr 07 2022
+*  File : index.html
+******************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Author">
+    <title>V̷̚ͅo̷̯̚i̴̯̓d̴̝͐ ̵̹̐T̸͚̋ȇ̴͈m̵̭̈́p̵͕͋l̴͈̔ê̵̹</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/void.css">
+</head>
+
+<script>
+    var playing = false;
+    function play() {
+        if (!playing) {
+            var audio = new Audio('audio/gate0.mp3');
+            audio.play();
+            playing = true;
+        }
+        
+    }
+      window.onload = play;
+</script>
+
+<body>
+    
+    <div id="background" onclick="play()">
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/******************************************
+*  Author : Excel   
+*  Created On : Thu Apr 07 2022
+*  File : void.css
+*******************************************/
+
+body {
+    background-image: url('../images/void.gif');
+    background-repeat: repeat;
+  }
+
+#background {
+    height : 100%;
+    width : 100%;
+}
