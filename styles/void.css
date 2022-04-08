@@ -13,3 +13,8 @@ body {
     height : 100%;
     width : 100%;
 }
+
+#intro {
+  color : white;
+  font-family : Arial, Arial, Helvetica, sans-serif;
+}
