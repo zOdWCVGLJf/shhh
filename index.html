@@ -13,20 +13,8 @@
     <title>V̷̚ͅo̷̯̚i̴̯̓d̴̝͐ ̵̹̐T̸͚̋ȇ̴͈m̵̭̈́p̵͕͋l̴͈̔ê̵̹</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/void.css">
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 </head>
-
-<script>
-    var playing = false;
-    function play() {
-        if (!playing) {
-            var audio = new Audio('audio/gate0.mp3');
-            audio.play();
-            playing = true;
-        }
-        
-    }
-      window.onload = play;
-</script>
 
 <body>    
     <div id="background" onclick="play()">
@@ -50,7 +38,19 @@
         temple and learning of this new apocalypse. This is the Ancient Void Temple, the great
         catacombs which hold the very essence of Flairia for safe keeping. And it is now revealed
         to you, waiting for your entry.
+
+        <button id="enter" class="center">Enter</button>
+
     </div>
+
+    <div id="scene">
+        <div id="ocean"></div>
+        <img id="tower" src="images/tower.png" class="center">
+    </div>
+
+    <script src="scripts/float.js"></script>
+
+    
 
 </body>
 
