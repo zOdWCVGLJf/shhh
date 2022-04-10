@@ -25,6 +25,9 @@ button {
 #intro {
   color : white;
   font-family : Arial, Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 0px;
+  background-color: gray;
 }
 
 #scene {
