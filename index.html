@@ -12,26 +12,53 @@
     <meta name="author" content="Author">
     <title>V̷̚ͅo̷̯̚i̴̯̓d̴̝͐ ̵̹̐T̸͚̋ȇ̴͈m̵̭̈́p̵͕͋l̴͈̔ê̵̹</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!-- Style -->
     <link rel="stylesheet" href="styles/void.css">
+    <!-- js imports -->
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 </head>
 
 <body>    
+    <audio id="music" src="audio/gate0.mp3" loop></audio>
     <div id="background">
 
     <div id="scene">
-        <div id="ocean"></div>
-        <img id="tower" src="images/tower.png" class="center">
-        
-        <img id="plat1" src="images/platform.png" class="platform">
-        <img id="plat2" src="images/platform.png" class="platform">
-        <img id="plat3" src="images/platform.png" class="platform">
-        <img id="plat4" src="images/platform.png" class="platform">
-        <img id="plat5" src="images/platform.png" class="platform">
-        <img id="plat6" src="images/platform.png" class="platform">
+        <div id="sky"></div>
+        <div id="ocean" class="rellax" data-rellax-speed="-8"></div>
+        <div id="temple" class="rellax" data-rellax-speed="-2">
+            <img id="tower" src="images/tower.png" class="center">
+            
+            <img id="plat1" src="images/platform.png" class="platform">
+            <img id="plat2" src="images/platform.png" class="platform">
+            <img id="plat3" src="images/platform.png" class="platform">
+            <img id="plat4" src="images/platform.png" class="platform">
+            <img id="plat5" src="images/platform.png" class="platform">
+            <img id="plat6" src="images/platform.png" class="platform">
+        </div>
+
+        <div id="platform-buttons">
+            <div class="button-pair d-flex justify-content-center">
+                <button class="platform-button"></button>
+                <button class="platform-button"></button>
+            </div>
+            <div class="button-pair d-flex justify-content-center">
+                <button class="platform-button"></button>
+                <button class="platform-button"></button>
+            </div>
+            <div class="button-pair d-flex justify-content-center">
+                <button class="platform-button"></button>
+                <button class="platform-button"></button>
+            </div>
+        </div>
+
     </div>
 
-    <script src="scripts/float.js"></script>
+    
 
     <div id="intro">
         <h1>The cracks began showing after the white sky consumed the multiverse.</h1>
@@ -48,16 +75,21 @@
         light that shines upon the world is the beacons of hope from the six ancient towers and
         the great temple itself.</p>
 
-        The nations of the world, the six flairs themselves, are now tasked with arriving to this
+        <p>The nations of the world, the six flairs themselves, are now tasked with arriving to this
         temple and learning of this new apocalypse. This is the Ancient Void Temple, the great
         catacombs which hold the very essence of Flairia for safe keeping. And it is now revealed
-        to you, waiting for your entry.
+        to you, waiting for your entry.</p>
 
         <button id="enter" class="center">Enter</button>
 
+        <script src="scripts/hideIntro.js"></script>
+
     </div>
 
-    
+    <script src="scripts/float.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax')
+    </script>
 
 </body>
 
