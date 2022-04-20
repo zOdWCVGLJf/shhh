@@ -5,16 +5,34 @@
 *******************************************/
 
 body {
-    background: #fafafa;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 0.8em;
-    color: #333;
-    line-height: 1.5;
-    margin-inline: 10%;
+    background-color: rgb(157, 182, 157);
 }
 
-div {
-    max-width: 800px;
+#article {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+
+    background: #fafafa;
+    border-radius: 0.5em;
+    margin: auto;
+    padding-inline: 2em;
+    padding-top: 0.5em;
+    max-inline-size: 800px;
+}
+
+.header {
+    border-bottom: #333 solid 1px;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 .left-float {
@@ -32,11 +50,12 @@ div {
     background-color: #c4f3b8;
     border-radius: 0px;
     padding: 10px;
+    padding-top: 0;
     border-color: black;
     border: solid;
     overflow: hidden;
     float: right;
-    width: auto;
+    width: 16em;
     margin-left: 2em;
     margin-bottom: 2em;
 }
@@ -45,7 +64,7 @@ div {
     color: gray;
     font-size: 0.75em;
     position: relative;
-    bottom: 2em;
+    padding-top: 0em;
 }
 
 .info-column {
