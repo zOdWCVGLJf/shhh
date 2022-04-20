@@ -49,15 +49,36 @@ h1 {
 #info {
     background-color: #c4f3b8;
     border-radius: 0px;
-    padding: 10px;
-    padding-top: 0;
     border-color: black;
     border: solid;
     overflow: hidden;
-    float: right;
-    width: 16em;
-    margin-left: 2em;
-    margin-bottom: 2em;
+    padding-top: 0;
+    padding: 10px;
+}
+
+@media screen and (orientation: landscape) {
+    #info {
+        float: right;
+        width: 16em;
+        margin-left: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #info {
+        float: none;
+        margin-inline: auto;
+    }
+
+    .info-column {
+        font-size: 2em;
+        margin-inline: 2em;
+    }
+
+    h3 {
+        text-align: center;
+    }
 }
 
 .clearance {
@@ -65,10 +86,6 @@ h1 {
     font-size: 0.75em;
     position: relative;
     padding-top: 0em;
-}
-
-.info-column {
-    font-size: 1em;
 }
 
 .section {
