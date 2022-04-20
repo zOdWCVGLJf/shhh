@@ -1,0 +1,58 @@
+/******************************************
+*  Author : Excel   
+*  Created On : Wed Apr 20 2022
+*  File : chaos.css
+*******************************************/
+
+body {
+    background: #fafafa;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 0.8em;
+    color: #333;
+    line-height: 1.5;
+    margin-inline: 10%;
+}
+
+div {
+    max-width: 800px;
+}
+
+.left-float {
+    float: left;
+    margin: 0em;
+}
+
+.right-float {
+    float: right;
+    margin: 0em;
+    margin-left: 2em;
+}
+
+#info {
+    background-color: #c4f3b8;
+    border-radius: 0px;
+    padding: 10px;
+    border-color: black;
+    border: solid;
+    overflow: hidden;
+    float: right;
+    width: auto;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.clearance {
+    color: gray;
+    font-size: 0.75em;
+    position: relative;
+    bottom: 2em;
+}
+
+.info-column {
+    font-size: 1em;
+}
+
+.section {
+    text-align: justify;
+    /* text-justify: inter-word; */
+}
